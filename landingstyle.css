@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(35, 39, 49);
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+header .logo{
+    position: relative;
+    width: 100px;
+
+}
+
+header .navigation a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+ 
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+ 
+header .navigation a:hover{
+    background-color: rgb(67, 68, 68);
+    cursor: pointer;
+}
+
+label{
+    display: none;
+}
+ #check{
+    z-index: 3;
+ }
+ 
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 2.5 rem;
+    font-weight: 300;
+}
+
+/* home section */
+#home{
+    background-image: url(./img/background.jpg);
+    background-color: rgb(35, 39, 49);
+    background-size: 100% 150%;
+    background-position: top center;
+    position: relative;
+} 
+
+#home::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(35, 36, 40);
+    opacity: .7;
+    z-index: -1;
+}
+
+#home .home-title h1 {
+    display: block;
+    width: fit-content;
+    position: relative;
+    text-transform: none;
+    text-decoration: solid;
+}
+/* End home section */
+/* Infor section */
+.infor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    padding:30px 100px ;    
+}
+.infor-img{
+    height: 500px;
+    width: 800px;
+    margin: 30px 200px;
+}
+/* End infor section */
+/* Object section */
+#object{
+    
+}
+#object .object{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#object .object-title p {
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 30px;
+    font-weight: 300;
+    
+}
+#object .object-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#object .object-small-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./img/object-bgr.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+}
+
+#object .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#object .object-small-item h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#object button{
+    padding: 5px 10px;
+    background-color: rgb(102, 102, 119);
+    color: #fff;
+}
+
+/* End Object section*/
+/* Job section */
+#jobs{
+    background-color: rgb(133, 133, 151);
+}
+.jobs-item{
+    display: block;
+}
+.jobs-small-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./img/object-bgr.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+}
+.img-item{
+    width: 50%;
+    height: 100%;
+}
+.img-item img {
+    background-size: cover;
+}
+/* End job section */
+/* Contact section */
+#contact{
+    display: flex;
+    padding: 10px; 
+    background-color: black;  
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.contact > h2 {
+   margin: 10px 30px;
+}
+.contact-item{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+.icon-contact{
+    width: 40px;
+    height: 40px;
+}
+.form{
+    width: 40%;
+    background-image: url(./img/object-bgr.jpg);
+    border-radius: 10px;
+    margin-right: 20px;
+    color: white;
+}
+.form table{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   border-collapse: collapse;
+   vertical-align:middle;
+}
+table, tr,td{
+    border: 2px solid rgb(62, 65, 70); 
+}
+tr,td{
+    padding: 10px;
+}
+table button{
+    padding: 5px 20px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+table button:hover{
+    background-color: azure;
+    cursor: pointer;
+}
+.form h1 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+/* Responsive styles */
+ @media (max-width: 1024px){
+    header .navigation{
+        display: none;
+    }
+
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        color: rgb(95, 92, 92);
+        transition: 0.3s;
+        transition-property: color;
+    }
+     
+    label:hover{
+        color: #fff;
+    }
+
+    label .close-btn{
+        display: none;
+    }
+
+    #check:checked ~ header .navigation{
+        z-index: 2;
+        position: fixed;
+        background: rgba(54, 58, 60, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ header .navigation a{
+        font-weight: 500;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    }
+     
+    #check:checked ~ header label .close-btn{
+        display: block;
+        z-index: 2;
+        position: fixed;
+    }
+
+    label .menu-btn{
+        position: absolute;
+    }
+
+    header .logo{
+        position: absolute;
+        bottom: -6px;
+    }
+ }
