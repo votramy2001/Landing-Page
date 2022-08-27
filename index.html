@@ -3,67 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThucTapVNCERT</title>
+  <title>Ươm mầm VNCERT</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./img/">
-  <link rel="stylesheet" href="./icon/">
+  <link rel="stylesheet" href="./grid.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
   <!-- nav-bar  -->
-  <section id="nav-bar" class="container">
-    <header class="nav-bar">
-      <div class="brand"><a href="#hero"><img width="50px" src="./img/Asset 1.png" alt=""></a></div>
-      <div class="nav-list">
-        <div class="hamburger">
-          <div class="bar"></div>
-        </div>
-        <ul>
-          <li><a href="#about">Giới Thiệu</a></li>
-          <li><a href="#services">Hoạt động</a></li>
-          <li><a href="#footer">Liên hệ</a></li>
+ 
+    <nav class="navbar">
+        <a href="#hero" class="logo__link">
+          <img width="50px" src="./img/Asset 1.png" alt="">
+        </a>
+        <ul class="navbar__list">
+          <li><a class="navbar__link"  href="#about">Giới Thiệu</a></li>
+          <li><a class="navbar__link" href="#services">Hoạt động</a></li>
+          <li><a class="navbar__link" href="#footer">Liên hệ</a></li>
         </ul>
-      </div>
-    </header>
-  </section>
+    </nav>
   <!-- End nav-bar  -->
 
-  <!-- Hero Section  -->
-  <section id="hero" class="hero container">
-    <div class="hero-info">
+  <div class="grid">
+      <!-- Content Section  -->
+  <section id="hero" class="hero container row">
+    <div class="hero-info column l-4 l-o-1 m-12 c-12 ">
       <h1 class="hero-info-heading">Chương trình thực tập <br>"Ươm mầm tài năng An Toàn Thông Tin"</h1>
       <p class="hero-info-subheading">Trung tâm ứng cứu khẩn cấp không gian mạng Việt Nam</p>
-      <a href="#form" type="button" class="hero-info-button">Apply CV</a>
+      <a href="#form" type="button" class="hero-info-button">Apply now</a>
     </div>
-    <div class="hero-img">
-      <img src="./img/—Pngtree—technology information security data_5930388.png" alt="">
+    <div class="hero-img l-7 m-12 c-12">
+      <img src="./img/mapp.png" alt="">
     </div>
   </section>
   <!-- End Hero Section  -->
-<!-- xong xoa file m muon tao di  -->
+
   <!-- About section  -->
-  <section id="about" class="about container">
-    <div class="about-info">
+  <section id="about" class="about container row">
+    <div class="about-info column l-7 m-12">
       <h1 class="about-info-heading">Giới thiệu</h1>
       <p class="about-info-desc">Trung tâm Ứng cứu khẩn cấp không gian mạng Việt Nam, đơn vị sự nghiệp công lập trực thuộc Cục An toàn thông tin vừa được Bộ TT&TT ra quyết định thành lập trên cơ sở tổ chức lại Trung tâm Ứng cứu khẩn cấp máy tính Việt Nam và Trung tâm Kiểm định an toàn thông tin. Trung tâm Ứng cứu khẩn cấp không gian mạng Việt Nam có tên giao dịch quốc tế là Vietnam Cybersecurity mergency Response Teams/Coordination Center (VNCERT/CC), có trụ sở chính đặt tại Hà Nội và các chi nhánh tại TPHCM và Đà Nẵng.
         <br>VNCERT/CC là đơn vị sự nghiệp công lập trực thuộc Cục An toàn thông tin thực hiện chức năng làm đầu mối kỹ thuật điều phối ứng cứu sự cố an toàn không gian mạng và kiểm định an toàn thông tin trên phạm vi toàn quốc; quản lý, vận hành các hệ thống số liệu, cơ sở dữ liệu, hệ thống kỹ thuật về điều phối ứng cứu sự cố, kiểm định và phòng, chống thư điện tử rác, tin nhắn rác phục vụ công tác quản lý nhà nước và thực thi pháp luật về an toàn thông tin; là đầu mối hợp tác quốc tế với các cơ quan, tổ chức có chức năng ứng cứu sự cố và kiểm định an toàn thông tin.</p>
     </div>
-    <div class="about-img">
-      <div class="about-img-wrapper">
+    <div class="about-img l-5 m-12">
         <img src="./img/vncert.jpg" alt="">
-      </div>
     </div>
   </section>
   <!-- End About section  -->
 
-  <!-- Service Section  -->
-  <section id="services" class="services container">
-    <div class="services-header">
+  <!-- Activity Section  -->
+  <section id="services" class="services container row">
+    <div class="services-header column l-12">
       <h1 class="services-header-heading">Hoạt động</h1>
       <p class="services-header-desc">Bạn sẽ được tham gia vào các khóa học khi thực tập ở trung tâm và sau khi hoàn thành mỗi khóa sẽ được giấy chứng nhận từ trung tâm.</p>
     </div>
-    <div class="services-info">
-      <div class="service">
+    <div class="services-info row">
+      <div class="service column l-3">
         <div class="service-card">
           <div class="service-front">
             <i class="fa fa-palette"></i>
@@ -75,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div class="service">
+      <div class="service column l-3">
         <div class="service-card">
           <div class="service-front">
             <i class="fa fa-laptop-code"></i>
@@ -87,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="service">
+      <div class="service column l-3">
         <div class="service-card">
           <div class="service-front">
             <i class="fa fa-building"></i>
@@ -100,25 +95,33 @@
         </div>
       </div>
     </div>
-    <a href="#" type="button" style="font-size: 20px; padding: 10px; color:black">Xem thêm</a>
+    <a href="#" type="button" class="service-see-more" >Xem thêm</a>
   </section>
   <!-- End Service Section  -->
 
   <!-- League Section  -->
-  <section id="league" class="league container">
+  <section id="league" class="league container row">
     <h1 class="league-heading">Các đơn vị hợp tác</h1>
-    <div class="league-item">
-        <a href="https://www.actvn.edu.vn/" ><img class="img-league" src="./img/logo-hvktmm.png" alt="" ></a>
-        <a href="https://portal.ptit.edu.vn/" ><img class="img-league" src="./img/logo-ptit.png" alt="" ></a>
-        <a href="https://www.tlu.edu.vn/" ><img class="img-league" src="./img/logo-dai-hoc-thuy-loi.jpg" alt="" ></a>
-        <a href="https://www.tlu.edu.vn/" ><img class="img-league" src="./img/161254logocmccybersecurityrgb-02.jpg" alt="" ></a>
+    <div class="league-item row">
+        <a class="column l-2 m-2 c-2 " href="https://www.actvn.edu.vn/" >
+          <img class="img-league" src="./img/logo-hvktmm.png" alt="" >
+        </a>
+        <a class="column l-2 m-2 c-2" href="https://portal.ptit.edu.vn/" >
+          <img class="img-league" src="./img/logo-ptit.png" alt="" >
+        </a>
+        <a class="column l-2 m-2 c-2" href="https://www.tlu.edu.vn/" >
+          <img class="img-league" src="./img/logo-dai-hoc-thuy-loi.jpg" alt="" >
+        </a>
+        <a class="column l-2 m-2 c-2" href="https://www.tlu.edu.vn/" >
+          <img class="img-league" src="./img/161254logocmccybersecurityrgb-02.jpg" alt="" >
+        </a>
         
     </div>
   </section>
   <!-- End League Section  -->
   <!-- Forms section -->
-  <section id="forms">
-    <div class="right-title">
+  <section id="forms row">
+    <div class="right-title column l-11 l-o-1  m-10 m-o-1 c-10 c-o-1">
         <h1>Tại sao bạn nên thực tập ở VNCERT/CC?</h1>
         <p> 1. Được định hướng và hướng dẫn nghiên cứu các lĩnh vực liên quan đến an toàn thông tin.<br>
             2. Được đào tạo (chính thức và không chính thức) các kiến thức về an toàn thông tin, kỹ năng làm việc.<br>
@@ -128,7 +131,7 @@
             6. Được thực tập trong môi trường trẻ, năng động, chuyên nghiệp.<br>
             7. Sau thời gian thực tập, được ưu tiên ứng tuyển chính thức vào trung tâm, không cần phải qua vòng sơ tuyển và thời gian thử việc.</p>
     </div>
-    <div class="left-form">
+    <div class="left-form column l-6 l-o-3 m-10 m-o-1  c-12">
         <form id="form" action="" method="post">
             <table >
                 <caption><h1>Đăng kí nộp CV</h1></caption>
@@ -208,6 +211,9 @@
     </div>
   </footer>
   <!-- End Footer section  -->
+  </div>
+
+
   <script src="./app.js"></script>
 </body>
 </html>

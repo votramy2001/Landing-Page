@@ -1,0 +1,153 @@
+/*  */
+@media only screen and (min-width: 1024px) {
+  .nav-bar .nav-list .hamburger {
+    display: none;
+  }
+
+  .nav-bar .nav-list ul {
+    transform: translateX(0);
+    position: initial;
+    padding: 0;
+    z-index: initial;
+    background-color: transparent;
+  }
+  .nav-bar .nav-list ul li {
+    display: inline-block;
+  }
+  .hero {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero-info {
+    max-width: 30%;
+    text-align: left;
+  }
+  .hero .hero-info .hero-info-subheading {
+    font-size: 1.3rem;
+    letter-spacing: 0.5rem;
+  }
+  .hero .hero-img {
+    min-width: 400px;
+    max-width: 1000px;
+  }
+  .about {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .services .services-header .services-header-desc {
+    max-width: 500px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  .services .services-info {
+    flex-direction: row;
+    width: 80%;
+  }
+  .services .services-info .service {
+    margin: 0;
+  }
+  .league {
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  #forms {
+    padding: 20px 100px;
+  }
+
+  #forms .right-title {
+    flex: 1;
+    width: 90%;
+  }
+  #form {
+    padding: 20px;
+  }
+  #form tr {
+    /* display: flex; */
+    flex-direction: column;
+    line-height: 4rem;
+  }
+  #form tr input[type="text"],
+  #form tr input[type="email"] {
+    width: 80%;
+    padding: 5rem 1rem;
+    height: 50px;
+  }
+  #form tr select {
+    width: 80px;
+    height: 30px;
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+}
+/*  */
+/* Media Query For Desktop Only  */
+@media only screen and (max-width: 1024px) {
+
+  .hero .hero-info .hero-info-subheading {
+    letter-spacing: 0.8rem;
+  }
+}
+/* End Media Query For Desktop Only  */
+
+@media (min-width: 764px) and (max-width: 1024px) {
+  .hero {
+    /* margin-top: 70px; */
+  }
+  .hero-info {
+    order: 2;
+  }
+  .hero-img {
+    order: 1;
+  }
+  .about-img {
+    margin-top: 40px;
+  }
+  .about-img img {
+    width: 100%;
+  }
+  .service-see-more {
+    font-size: 35px;
+  }
+  .img-league {
+    width: 160px;
+    height: 160px;
+  }
+  .left-form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/* mobile */
+@media (max-width: 763px) {
+  .hero-info {
+    order: 2;
+  }
+  .hero-img {
+    order: 1;
+  }
+	.hero-info-heading {
+    font-size: 40px;
+  }
+  .about .about-img img {
+    width: 100%;
+  }
+  .hero-info-button {
+	margin-bottom: 30px;
+  }
+  .img-league {
+    width: 80px;
+    height: 80px;
+  }
+  .left-form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .footer .footer-contact .footer-contact-info {
+	font-size: 15px;
+  }
+}
