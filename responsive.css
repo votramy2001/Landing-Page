@@ -32,11 +32,12 @@
     max-width: 1000px;
   }
   .about {
-    width: 80%;
     margin: 0 auto;
     flex-direction: row;
   }
-
+  .about .about-img img {
+    width: 500px;
+  }
   .services .services-header .services-header-desc {
     max-width: 500px;
     padding-top: 20px;
@@ -124,6 +125,13 @@
 
 /* mobile */
 @media (max-width: 763px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+  .navbar__link {
+    font-size: 15px;
+    padding: 20px 5px;
+  }
   .hero-info {
     order: 2;
   }

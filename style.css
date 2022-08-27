@@ -219,7 +219,7 @@ html {
 .services {
   flex-direction: column;
   min-height: 60vh;
-  padding: 10rem 5rem;
+  padding: 10rem 0;
 }
 .services .services-header {
   width: 100%;
@@ -242,6 +242,7 @@ html {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: 30px auto 0;
 }
 .services .services-info .service {
   width: 100%;
@@ -389,6 +390,10 @@ html {
   font-size: 2rem;
   margin-top: 10px;
   line-height: 25px;
+}
+.left-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 form {
   background: url(./img/dd9094c73bdc9aedf48cb4957b5d3e3a.jpg);
