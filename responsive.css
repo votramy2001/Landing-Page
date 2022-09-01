@@ -1,5 +1,88 @@
-@media only screen and (min-width: 786px) {
-       
-   
+/* Media query for desktop and tab  */
+@media only screen and (min-width: 1024px){
+	.nav-bar .nav-list .hamburger {
+		display: none;
+	}
+	.nav-bar {
+		width: 100%;
+        padding: 0.5rem 3rem;
+	}
+	.nav-bar .nav-list ul {
+		transform: translateX(0);
+		position: initial;
+		padding: 0;
+		z-index: initial;
+		background-color: transparent;
+	}
+	.nav-bar .nav-list ul li {
+		display: inline-block;
+	}
+	.hero {
+		height: 100vh;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.hero-info {
+		max-width: 30%;
+		text-align: left;
+	}
+    .hero-info-heading{
+        font-size: 4.5rem;
+
+    }
+	.hero-info-subheading {
+		font-size: 1.3rem;
+		letter-spacing: .5rem;
+        padding-top: 20px;
+	}
+	.hero .hero-img {
+		min-width: 400px;
+		max-width: 1000px;
+        margin-left: 50px;
+	}
+	.about {
+		width: 100%;
+		margin: 0 auto;
+		flex-direction: row;
+	}
+	.about-info {
+		width: 100%;
+		text-align: left;
+		padding-right: 50px;    
+	}
+    .about-info-heading{
+        font-size: 4rem;
+    }
+    .about-info-desc{
+        font-size: 25px;
+    }
+    .services {
+        padding: 5rem 5rem;
+    }
+	.services .services-header .services-header-desc {
+		max-width: 500px;
+		padding-top: 20px;
+		margin: 0 auto;
+	}
+	.services .services-info {
+		flex-direction: row;
+		width: 80%;
+	}
+	.services .services-info .service {
+		margin: 0;
+	}
+    .left-title p{
+        font-size: 25px;
+        margin: 50px;
+        line-height: 1.5;
+    }
+    .right-form{
+        width: 60%;
+    }
+    .right-form h1 {
+        font-size: 4rem;
+    }
     
 }
+/* End Media query for desktop and tab  */

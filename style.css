@@ -8,6 +8,7 @@ html {
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+	line-height: 1.2;
 }
 .container {
 	width: 100%;
@@ -28,15 +29,15 @@ html {
 	background-color: black;
 	left: 0;
 	top: 0;
-	padding: 1rem 5rem;
 	width: 100%;
+	padding: 1rem 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 .nav-bar .brand a {
 	font-family: 'Flash Back - Demo', sans-serif;
-	font-size: 3rem;
+	font-size: 1.5rem;
 	color: white;
 }
 .nav-bar .nav-list {
@@ -141,7 +142,7 @@ html {
 .hero {
 	min-height: 100vh;
 	width: 100%;
-	padding-top: 50px;
+	padding: 100px 0%;
 	justify-content: center;
 	background-color: black;
 	display: flex;
@@ -149,24 +150,24 @@ html {
 	justify-content: center;
 	align-items: center;
 }
-.hero .hero-info {
-	width: 100%;
+.hero-info {
+	max-width: 60%;
 	text-align: center;
 }
-.hero .hero-info .hero-info-heading {
-	font-size: 5rem;
+.hero-info-heading {
+	font-size: 3rem;
 	font-weight: 500;
 	color: whitesmoke;
 }
-.hero .hero-info .hero-info-subheading {
-	font-size: 1.6rem;
+.hero-info-subheading {
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	letter-spacing: .5rem;
 	color: whitesmoke;
 }
-.hero .hero-info .hero-info-button {
+.hero-info-button {
 	margin-top: 30px;
-	padding: 2rem 5rem;
+	padding: 2rem 3rem;
 	display: inline-block;
 	font-size: 1.6rem;
 	text-transform: uppercase;
@@ -174,13 +175,39 @@ html {
 	text-decoration: none;
 	letter-spacing: .6rem;
 	background-color: rgba(85, 85, 85, 0.534);
+	border-color: 2px #fdfdfd;
 }
-.hero .hero-img {
+.neons {
+	text-align: center;
+ }
+ 
+ .neons h1 {
+   font-size: 2rem;
+   text-align: center;
+	font-weight: bold;
+   -webkit-animation: glow 1s ease-in-out infinite alternate;
+   -moz-animation: glow 1s ease-in-out infinite alternate;
+   animation: glow 1s ease-in-out infinite alternate;
+ }
+ 
+ @-webkit-keyframes glow {
+	  from {
+	   color: #fff;
+	 text-shadow: 0 0 5px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+   }
+   
+   to {
+	  color: gray;
+	 text-shadow: 0 0 10px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+   }
+ }
+.hero-img {
 	height: auto;
-	width: 70%;
+	width: 80%;
 	margin-bottom: 3rem;
+	text-align: right;
 }
-.hero .hero-img img {
+.hero-img img {
 	height: 100%;
 	width: 100%;
 }
@@ -190,76 +217,66 @@ html {
 .about {
 	width: 100%;
 	min-height: 50vh;
-	padding: 10rem 5rem;
+	padding: 60px 40px;
 	flex-direction: column;
     background-color: rgba(0, 0, 0, 0.212);
 }
-.about .about-info {
-	text-align: center;
+.about-info {
+	text-align: left;
 }
-.about .about-info .about-info-heading {
+.about-info-heading {
 	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
 	color: black;
 }
-.about .about-info .about-info-desc {
-	font-size: 2rem;
-	line-height: 25px;
+.about-info-desc {
+	font-size:25px;
+	line-height: 1.2;
 	margin-top: 10px;
     text-align: justify;
 }
 
-.about .about-img {
-	margin-top: 40px;
+.about-img {
 	display: block;
+	align-items: center;
+	text-align: right;
 }
-.about .about-img .about-img-wrapper {
-	margin-top: 50px;
+.about-img-wrapper {
 	height: auto;
-	max-width: 800px;
 	position: relative;
 	display: inline-block;
+	margin-top: 20px;
 }
-.about .about-img .about-img-wrapper img {
+.about-img-wrapper >img {
 	height: 100%;
 	width: 100%;
 }
-.about .about-img .about-img-wrapper::after {
-	position: absolute;
-	content: '';
-	right: -5rem;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 70%;
-	height: 120%;
-	background-color: rgba(34, 33, 33, 0.158);
-	z-index: -1;
-}
+
 /* End About Section  */
 
 /* Services section  */
 .services {
 	flex-direction: column;
 	min-height: 60vh;
-	padding: 10rem 5rem;
+	padding: 2rem 3rem;
 }
-.services .services-header {
+.services-header {
 	width: 100%;
 	text-align: center;
 }
-.services .services-header .services-header-heading {
-	font-size: 4rem;
+.services-header-heading {
+	font-size: 3rem;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: .3rem;
 	color: black;
 }
-.services .services-header .services-header-desc {
-	font-size: 2rem;
-	line-height: 2rem;
+.services-header-desc {
+	font-size: 20px;
+	line-height: 1.2;
 	margin-top: 20px;
 }
-.services .services-info {
+.services-info {
 	margin-top: 30px;
 	display: flex;
 	align-items: center;
@@ -267,14 +284,14 @@ html {
 	width: 100%;
 	flex-direction: column;
 }
-.services .services-info .service {
+.service {
 	width: 100%;
 	min-height: 300px;
 	position: relative;
 	transition: .3s ease transform;
 	margin: 5px;
 }
-.services .services-info .service .service-card {
+.service-card {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -282,8 +299,8 @@ html {
 	transition: .3s ease transform;
 	display: block;
 }
-.services .services-info .service .service-card .service-front,
-.services .services-info .service .service-card .service-back {
+.service-front,
+.service-back {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -297,24 +314,24 @@ html {
 	background-color: rgba(0, 0, 0, 0.13);
 	padding: 10px;
 }
-.services .services-info .service .service-card .service-back {
+.service-back {
 	transform: rotateY(180deg);
 }
-.services .services-info .service .service-card .service-front i {
+.service-front i {
 	font-size: 4rem;
 	color: black;
 	margin-bottom: 10px;
 }
-.services .services-info .service .service-card .service-front .service-front-heading,
-.services .services-info .service .service-card .service-back .service-back-heading {
+.service-front-heading,
+.service-back-heading {
 	font-size: 2.5rem;
 	text-transform: capitalize;
 }
 .services .services-info .service:hover .service-card {
 	transform: rotateY(180deg);
 }
-.services .services-info .service .service-card .service-back .service-back-desc {
-	font-size: 2rem;
+.service-back-desc {
+	font-size: 25px;
 	margin-top: 10px;
 	text-align: center;
 }
@@ -345,11 +362,12 @@ html {
 .league {
 	min-height: 10vh;
 	flex-direction: column;
+	align-items: center;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.212);
 	padding: 3rem 2rem;
 }
-.league .league-heading {
+.league-heading {
 	color: black;
 	font-size: 3rem;
 	text-align: center;
@@ -359,6 +377,7 @@ html {
     gap: 40px;
     margin-top: 30px;
     flex-wrap: wrap;
+	justify-content: space-around;
 }
 .img-league{
     width: 200px;
@@ -369,86 +388,118 @@ html {
 /* <!-- Forms section --> */
 #forms{
     display: flex;
+	flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    gap: 30px;
-    padding: 10rem 5rem;
-    text-align: justify;
+    padding: 5rem 2rem;
+    text-align: left;
 }
-.right-title{
-    width: 50%;
-   
-}
-.right-title h1{
+.left-title h1{
     font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: black;
     margin-bottom: 30px;
+	text-align: center;
 }
-.right-title p{
-    font-size: 2rem;
-    margin-top: 10px;
-    line-height: 25px;
+.left-title p{
+    font-size: 25px;
+	line-height: 1.2;
 }
-form{
-    background: url(./img/dd9094c73bdc9aedf48cb4957b5d3e3a.jpg);
-    background-size:100% 100%;
-    padding: 30px;
-    border-radius: 20px;
-    color: white;
-    font-size: 2rem;
+.right-form{
+	background:url(./img/dd9094c73bdc9aedf48cb4957b5d3e3a.jpg);
+	background-color: #4a525a5f;
+	background-size:100% 100% ;
+	border-radius: 20px;
+	width: 100%;
+	margin-top: 20px;
 }
-caption{
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
+.right-form h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color:whitesmoke;
+    margin: 50px 0;
+	text-align: center;
 }
-#form tr
-    {
-        /* display: flex; */
-        line-height: 40px;
-    }
-#form tr input[type=text] ,#form tr input[type=email]
-{
-    width: 100%;
-    padding: 5rem 2rem;
-    height: 40px ;
-    color:#fff;
-}
-#form tr input::placeholder
-    {
-        color:#fff;
-        font-size: 1rem;
-    }
-#form tr select {
-    width: 40px;
-    height: 30px;
-    border-radius: 10px;
-}
-.text{
-    height: 30px;
-    border-radius: 10px;
-    opacity: .6;
-    font-size: 1.5rem;
-}
-.gender{
-    margin-right:5px;
-}
-#submit{
-    width:100px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: rgb(59, 67, 94);
-    color: white;
-    font-size: 2rem;   
-    margin-top: 20px;
-}
-#submit:hover{
-    background-color: aliceblue;
-    color: #000;
-}
+  .form {
+	width: 100%;
+	position: relative;
+	height: 80px;
+	overflow: hidden;
+	color: white;
+	font-size: 25px;
+  }
+  
+  .form input {
+	width: 100%;
+	height: 100%;
+	color: white;
+	padding-top: 20px;
+	border: none;
+	background-color: #585a5c50;;
+	font-size: 20px;
+	
+  }
+  .form label {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 2px solid rgb(97, 97, 97);
+  }
+  .form label::after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border-bottom: 3px solid #fce38a;
+	transform: translateX(-100%);
+	transition: all 0.3s ease;
+  }
+  
+  .content-name {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-bottom: 5px;
+	transition: all 0.3s ease;
+  }
+  .form input:focus {
+	outline: none;
+  }
+  .form input:focus + .label-name .content-name,
+  .form input:valid + .label-name .content-name {
+	transform: translateY(-150%);
+	font-size: 16px;
+	left: 0px;
+	color: #fdfdfd;
+  }
+  .form input:focus + .label-name::after,
+  .form input:valid + .label-name::after {
+	transform: translateX(0%);
+  }
+  .submit{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 25px;
+	padding: 10px 20px;
+	text-align: center;
+	border-radius: 10px;
+	align-items: center;	
+  }
+  
+  .right-form button:hover{
+	cursor: pointer;
+	background-color: black;
+	color: white;
+  }
+
 /* End forms section  */
 /* Footer section  */
 .footer {
@@ -458,21 +509,19 @@ caption{
 	color: white;
 	flex-direction: column;
 	text-align: center;
-	padding: 5rem;
 }
 .footer .footer-contact {
 	padding: 20px;
 }
 .footer .footer-contact .footer-contact-heading {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
 }
 .footer .footer-contact .footer-contact-info {
-	font-size: 2rem;
+	font-size:20px;
 	padding-top: 10px;
-	letter-spacing: .2rem;
 }
 .footer .footer-social-follow .footer-social-icon a {
 	color: white;
@@ -481,116 +530,5 @@ caption{
 	display: inline-block;
 }
 /* End Footer section  */
-/*  */
-@media only screen and (min-width:1024px) {
-	.nav-bar .nav-list .hamburger {
-		display: none;
-	}
-	.nav-bar {
-		width: 80%;
-	}
-	.nav-bar .nav-list ul {
-		transform: translateX(0);
-		position: initial;
-		padding: 0;
-		z-index: initial;
-		background-color: transparent;
-	}
-	.nav-bar .nav-list ul li {
-		display: inline-block;
-	}
-	.hero {
-		height: 100vh;
-		flex-direction: row;
-		padding-left: 10%;
-		justify-content: center;
-		align-items: center;
-	}
-	.hero .hero-info {
-		max-width: 30%;
-		text-align: left;
-	}
-	.hero .hero-info .hero-info-subheading {
-		font-size: 1.3rem;
-		letter-spacing: .5rem;
-	}
-	.hero .hero-img {
-		min-width: 400px;
-		max-width: 1000px;
-	}
-	.about {
-		width: 80%;
-		margin: 0 auto;
-		flex-direction: row;
-	}
-	.about .about-info {
-		width: 50%;
-		text-align: left;
-		padding-right: 17rem;
-	}
-	.services .services-header .services-header-desc {
-		max-width: 500px;
-		padding-top: 20px;
-		margin: 0 auto;
-	}
-	.services .services-info {
-		flex-direction: row;
-		width: 80%;
-	}
-	.services .services-info .service {
-		margin: 0;
-	}
-	.league {
-		justify-content: center;
-		margin-top: 10px;
-		flex-wrap: wrap;
-	}
-	#forms
-    {
-        padding: 20px 100px;
 
-    }
-	.right-title{
-		width: 100%;
-	}
-    #forms .right-title
-    {
-		flex: 1;
-        width: 90%;
-    }
-    #form {
-        padding: 20px;
-    }
-    #form tr
-    {
-         /* display: flex; */
-        flex-direction: column;
-        line-height: 4rem;
-    }
-    #form tr input[type=text] ,#form tr input[type=email]
-    {
-        width: 80%;
-        padding: .5rem 1rem;
-        height: 50px ;
-    }
-    #form tr select 
-    {
-        width: 80px;
-        height: 30px;
-        font-size: 2rem;
-        border-radius: 5px;
-    }
-}
-/*  */
-/* Media Query For Desktop Only  */
-@media only screen and (max-width:1024px) {
-	
-
-	.hero .hero-info .hero-info-heading {
-		font-size: 6rem;
-	}
-	.hero .hero-info .hero-info-subheading {
-		letter-spacing: .8rem;
-	}
-}
-/* End Media Query For Desktop Only  */
+ 

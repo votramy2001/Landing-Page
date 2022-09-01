@@ -6,6 +6,7 @@
   <title>ThucTapVNCERT</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="./img/">
   <link rel="stylesheet" href="./icon/">
 </head>
@@ -33,14 +34,17 @@
     <div class="hero-info">
       <h1 class="hero-info-heading">Chương trình thực tập <br>"Ươm mầm tài năng An Toàn Thông Tin"</h1>
       <p class="hero-info-subheading">Trung tâm ứng cứu khẩn cấp không gian mạng Việt Nam</p>
-      <a href="#form" type="button" class="hero-info-button">Apply CV</a>
+      <a href="#form" type="button" class="hero-info-button">
+        <div class="neons ">
+          <h1><em>Apply ngay!!</em></h1>
+        </div>
+      </a>
     </div>
     <div class="hero-img">
       <img src="./img/—Pngtree—technology information security data_5930388.png" alt="">
     </div>
   </section>
   <!-- End Hero Section  -->
-<!-- xong xoa file m muon tao di  -->
   <!-- About section  -->
   <section id="about" class="about container">
     <div class="about-info">
@@ -117,8 +121,8 @@
   </section>
   <!-- End League Section  -->
   <!-- Forms section -->
-  <section id="forms">
-    <div class="right-title">
+  <section id="forms" class="forms container">
+    <div class="left-title">
         <h1>Tại sao bạn nên thực tập ở VNCERT/CC?</h1>
         <p> 1. Được định hướng và hướng dẫn nghiên cứu các lĩnh vực liên quan đến an toàn thông tin.<br>
             2. Được đào tạo (chính thức và không chính thức) các kiến thức về an toàn thông tin, kỹ năng làm việc.<br>
@@ -128,63 +132,41 @@
             6. Được thực tập trong môi trường trẻ, năng động, chuyên nghiệp.<br>
             7. Sau thời gian thực tập, được ưu tiên ứng tuyển chính thức vào trung tâm, không cần phải qua vòng sơ tuyển và thời gian thử việc.</p>
     </div>
-    <div class="left-form">
-        <form id="form" action="" method="post">
-            <table >
-                <caption><h1>Đăng kí nộp CV</h1></caption>
-                 <tr>
-                     <td>Họ tên: </td>
-                     <td>
-                         <input class="text" size="50%" type="text" name="" placeholder="Nguyễn Văn A">
-                     </td>
-                 </tr>
-                 <tr>
-                     <td>Giới tính: </td>
-                     <td >
-                         <input class="gender" name="gender" type="radio" value="Nam" /> Nam
-                         <input class="gender" name="gender" type="radio" value="Nữ" /> Nữ
-                         <input class="gender" name="gender" type="radio" value="Khác" /> Khác
-                     </td>
-                 </tr>
-                 <tr>
-                     <td>Trường:</td>
-                     <td>
-                         <input class="text" size="50%" type="text" name="">
-                     </td>
-                 </tr>
-                 <tr>
-                     <td>Chuyên ngành:</td>
-                     <td>
-                         <input class="text" size="50%" type="text" name="" >
-                     </td>
-                 </tr>
-                 <tr>
-                    <td>Đang là sinh viên năm bao nhiêu: </td>
-                    <td>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </td>
-                </tr>
-                 <tr>
-                     <td>Email: </td>
-                     <td>
-                         <input  class="text" size="50%" type="email" name="" placeholder="nguyenvana@gmail.vn">
-                     </td>
-                 </tr>
-                 <tr>
-                     <td>Nộp CV:</td>
-                     <td>
-                         <input class="text" type="file" class="file-upload" accept=".pdf" required />
-                     </td>
-                 </tr>
-            </table>
-            <input id="submit" type="submit" name="submit" value="Gửi" /> 
-        </form>
+    <div class="right-form">
+        <h1>Đăng ký thực tập</h1>
+        <div class="form">
+          <input type="text" name="text" autocomplete="off" required />
+          <label for="text" class="label-name">
+            <span class="content-name">
+              Họ và tên:
+            </span>
+          </label>
+        </div>
+        <div class="form">
+          <input type="text" name="text" autocomplete="off" required />
+          <label for="text" class="label-name">
+            <span class="content-name">
+              Trường CĐ/ĐH:
+            </span>
+          </label>
+        </div>
+        <div class="form">
+          <input type="text" name="text" autocomplete="off" required />
+          <label for="text" class="label-name">
+            <span class="content-name">
+              Email:
+            </span>
+          </label>
+        </div>
+        <div class="form">
+          <input type="text" name="text" autocomplete="off" required />
+          <label for="text" class="label-name">
+            <span class="content-name">
+              Số điện thoại:
+            </span>
+          </label>
+        </div> 
+        <button class="submit"> Gửi </button> 
     </div>
   </section>
   <!-- End forms section -->
@@ -193,7 +175,7 @@
   <footer id="footer" class="footer container">
     <div class="footer-contact">
       <h1 class="footer-contact-heading">Liên hệ với chúng tôi</h1>
-      <p class="footer-contact-info">Địa chỉ: Tầng 5 - Trần Duy Hưng - Trung Hòa - Cầu Giấy - Hà Nội</p>
+      <p class="footer-contact-info">Địa chỉ: Tầng 5 - 115 Trần Duy Hưng - Trung Hòa - Cầu Giấy - Hà Nội</p>
       <p class="footer-contact-info">Email: chuongtrinhvuonuom@gmail.vn</p>
       <p class="footer-contact-info">Trang web: <a href="vncert.gov.vn">vncert.gov.vn</a></p>
     </div>
